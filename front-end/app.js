@@ -1,0 +1,43 @@
+var pmn = angular.module('pmn',['ngRoute']);
+
+pmn.config(['$routeProvider', function($routeProvider)
+{
+  $routeProvider.when('/',
+  {
+    controller:'HomeController',
+    templateUrl:'views/home.html'
+  })
+  .when('/bookings',
+  {
+    controller:'BookingsController',
+    templateUrl:'views/bookings.html'
+  })
+  .when('/about',
+  {
+    //controller:'BookingsController',
+    templateUrl:'views/about.html'
+  })
+  .when('/contact',
+  {
+    //controller:'BookingsController',
+    templateUrl:'views/contact.html'
+  })
+  .when('/pricing',
+  {
+    //controller:'BookingsController',
+    templateUrl:'views/pricing.html'
+  })
+  .when('/promotions',
+  {
+    //controller:'BookingsController',
+    templateUrl:'views/promotions.html'
+  })
+  .when('/dashboard',
+  {
+      templateUrl:'views/dashboard.html'
+  })
+  .otherwise(
+  {
+    redirectTo:'/'
+  });
+}]);

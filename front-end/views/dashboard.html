@@ -1,0 +1,97 @@
+<!--<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12" style="border-right: 1px solid #343434;">
+    <ul>
+      <li>Account</li>
+      <li>Order history</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <img src="./images/ic_account_circle_black_48px.svg" style="float:left;margin-left:10px;" width="120" height="120"/>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</nav>-->
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="row">
+      <img src="./images/ic_account_circle_black_48px.svg" style="float:left;margin-left:10px;" width="120" height="120"/>
+    </div>
+    <div class="row">
+      <div class="panel panel-info" style="width:100%;"  ng-controller="BookingsController">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Menu</div>
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">Overview</a></li>
+          <li role="presentation"><a href="#">Order history</a></li>
+          <li role="presentation"><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-8 col-md-6 col-sm-12" ng-init="loadUserBookings()">
+    <div class="panel panel-info" style="width:100%;"  ng-controller="BookingsController">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Notifications</div>
+      <div class="panel-body">
+        <p>You have no new messages.</p>
+      </div>
+    </div>
+
+    <div class="panel panel-primary" style="width:100%;"  ng-controller="BookingsController">
+      <div class="panel-heading">Order history</div>
+      <div class="panel-body">
+        <p>insert description</p>
+      </div>
+
+      <!-- Table -->
+      <table class="table">
+        <tr>
+          <th>Booking ID</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Nails</th>
+          <th>Waxes</th>
+          <th>Additional Packages</th>
+        </tr>
+        <tr  ng-repeat="booking in bookings">
+          <td>{{booking._id.substring(0,8)}}</td>
+          <td>{{booking.date}}</td>
+          <td>{{booking.location}}</td>
+          <td><button class="btn btn-primary">View</button></td>
+          <td>{{booking.waxes?booking.waxes:'none'}}</td>
+          <td>{{booking.packages?booking.packages:'none'}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>

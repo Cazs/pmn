@@ -1,0 +1,32 @@
+{
+  "name": "patrish-nails",
+  "version": "1.0.0",
+  "description": "Patrish Nails Web Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "pmn"
+  },
+  "keywords": [
+    "patrish",
+    "nails",
+    "beauty",
+    "mobile",
+    "paturapy",
+    "spa"
+  ],
+  "author": "Casper Ndlovu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "emailjs": "*",
+    "emailjs-smtp-client": "^1.0.0",
+    "emailjs-tcp-socket": "^1.0.2",
+    "express": "^4.14.0",
+    "linked-list-adt": "*",
+    "mongodb": "^2.2.12",
+    "mongoose": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

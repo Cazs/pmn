@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../css/hand.css"?><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg4570"
+   width="100%"
+   height="100%"
+   viewBox="1800 500 2000 2500"
+   sodipodi:docname="hand.svg"
+   inkscape:version="0.92pre2 r">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="731"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="0.1888"
+     inkscape:cx="1281.4871"
+     inkscape:cy="1642.4631"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4570" />
+  <defs
+     id="defs9">
+    <filter
+       id="filter_drop_shadow"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%">
+      <feOffset
+         result="offOut"
+         in="SourceAlpha"
+         dx="0"
+         dy="0"
+         id="feOffset2" />
+      <feGaussianBlur
+         result="blurOut"
+         in="offOut"
+         stdDeviation="9"
+         id="feGaussianBlur4" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut"
+         mode="normal"
+         id="feBlend6" />
+    </filter>
+  </defs>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     stroke-miterlimit="4"
+     id="hand_outline"
+     d="m 2448.3096,2999.6095 -23.4207,-287.1651 -78.2222,-177.7777 -21.3334,-71.1111 -183.7364,-519.7733 -49.1894,-117.554 c -10.3719,-20.414 -24.2688,-51.9421 -40.1681,-96.5019 -40.632,-101.6748 -63.2718,-141.1495 -110.6407,-298.4037 l -50.3148,-230.4689 30.2998,-14.8084 40.9286,-7.9507 c 17.0417,5.2949 24.0388,0.5451 60.4292,25.1887 9.7837,9.1712 16.537,9.8573 31.9999,34.9302 l 175.3683,373.29 110.512,199.1834 73.0737,111.7094 -52.1131,-332.0781 -22.2791,-172.9154 -3.2199,-146.971 -27.204,-382.4982 3.679,-89.61745 81.172,-57.03936 83.5976,51.34581 c 8.0206,24.63268 11.6454,49.21102 20.5909,106.82107 28.0231,145.47933 30.7094,169.27463 59.6504,330.14263 l 19.8081,142.1176 33.7778,155.1286 60.0348,350.8666 17.0939,-245.7817 0.5205,-151.0417 7.8846,-139.098 2.7981,-165.4666 3.5556,-152.889 -2.4402,-130.82233 c -2.8109,-52.01286 -0.5023,-107.68252 5.4198,-165.93321 4.5822,-23.98153 17.8194,-42.21626 26.1448,-56.21568 l 82.1209,-42.93244 86.0951,40.97109 c 9.3463,14.83292 16.7868,32.17001 17.4019,53.23945 7.4642,79.23032 11.1527,139.58247 16.3899,207.67824 l 22.0697,359.03718 2.7667,196.7015 0.7181,216.889 26.3841,174.6726 48.4869,-171.1534 c 9.7167,-23.4186 19.9051,-52.4973 33.108,-117.75 9.5108,-61.7981 19.5961,-123.5962 25.7255,-185.3943 l 31.5687,-211.2461 25.3527,-293.61532 44.7846,-28.02178 52.074,-27.46847 56.198,31.732 14.7998,15.67041 9.0477,394.96936 -13.3811,187.4246 -18.9455,232.1741 -4.1133,272.1085 c 8.6813,105.8509 23.0375,208.8643 59.7297,300.7098 19.6098,-18.5539 29.5305,-31.5711 36.8805,-43.1194 27.4924,-51.5226 43.1416,-105.1985 51.2351,-160.2481 l 42.0242,-203.7017 c 9.005,-30.268 46.132,-70.5432 94.2222,-112.4448 21.4984,-18.8373 35.8564,-25.2724 56.8889,-31.8 25.5837,-6.3076 37.9259,-8.9026 56.8889,-2.8663 l 34.2222,9.3333 15.1111,-2.4444 -49.3333,227.3333 28.4444,136 c -1.5321,47.0486 -16.6034,70.4035 -31.9476,93.281 -26.5723,34.7313 -34.0451,64.6878 -47.6558,96.1787 -15.3082,40.6936 -22.4688,86.1595 -18.1059,152.9573 4.4922,58.9085 -17.174,104.4944 -26.7351,166.9163 -22.704,62.7615 -21.7642,63.5331 -61.167,206.9267 l -44.8541,188.4501"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  <path
+     class="finger-nails"
+     id="finger_middle"
+     d="m 2815.762,602.773 c 20.1754,1.73301 41.9675,7.79384 54.7285,17.789 12.761,9.99516 21.6739,30.14112 21.6739,30.14112 1.3764,9.65561 2.9808,10.64888 3.5234,51.99024 l -1.7715,76.19531 c -2.9267,21.87632 -8.5107,42.30319 -21.1015,58.90821 -14.5482,11.90546 -30.0748,22.99564 -55.0489,26.21289 -16.2559,-3.16532 -28.1895,1.77362 -57.6875,-26.22071 -9.1572,-18.50487 -17.2355,-38.73592 -22.0058,-64.25976 -4.9646,-26.45362 -6.5269,-50.63902 -6.2051,-73.56836 0.9057,-15.09595 1.1397,-29.85602 3.6805,-45.76953 0.6829,-10.98099 6.7446,-20.88623 16.2453,-30.10366 16.4497,-11.75929 38.702,-20.13587 63.9687,-21.31475 z"
+     inkscape:connector-curvature="0"
+     fill="#ff6960"
+     sodipodi:nodetypes="ccccccccccccc" />
+  <path
+     class="finger-nails"
+     d="m 3235.2856,825.57 c 19.043,0.52311 38.0859,2.13202 57.1289,13.08937 11.0533,6.78492 21.0524,14.00912 21.6739,25.14062 l 3.5234,51.99024 -1.7715,76.19531 c -2.9609,19.63606 -7.6602,39.27216 -21.1015,58.90826 -33.9369,29.7205 -43.2439,26.2852 -55.0489,26.2128 -26.7126,2.7343 -44.1657,-8.7292 -57.6875,-26.2207 -9.7435,-19.0277 -17.4564,-35.4333 -22.0058,-64.25973 -4.7091,-27.16351 -4.7576,-49.66642 -6.2051,-73.56836 l 0.8808,-45.76953 c 0.6516,-8.36784 6.0499,-16.73568 19.045,-25.10352 19.9182,-10.37476 40.8013,-13.03051 61.5683,-16.61476 z"
+     id="finger_index"
+     inkscape:connector-curvature="0"
+     fill="#ff6960"
+     sodipodi:nodetypes="ccccccccccccc" />
+  <path
+     class="finger-nails"
+     id="finger_ring"
+     d="m 2394.2524,719.101 c 20.4688,-0.7531 39.1455,6.558 57.1289,16.98893 12.8817,10.56486 17.9263,14.77351 21.6739,25.14062 l 3.5234,51.99024 -4.6716,76.19531 c -2.403,25.48149 -2.6736,32.17739 -15.001,58.90821 -14.6986,20.16614 -33.0513,26.14982 -58.2493,26.21289 -38.0989,-2.81656 -50.7633,-11.328 -57.6875,-26.22071 -7.6023,-14.17707 -14.0907,-34.48105 -19.1968,-62.38713 -6.9994,-36.33212 -8.6308,-56.23302 -9.5144,-75.44099 0.5003,-12.17212 -0.6217,-26.45565 2.3174,-39.68347 1.573,-8.36784 7.8133,-22.82174 18.1087,-31.18958 16.3388,-12.41671 37.7619,-18.05436 61.5683,-20.51432 z"
+     inkscape:connector-curvature="0"
+     fill="#ff6960"
+     sodipodi:nodetypes="ccccccccccccc" />
+  <path
+     class="finger-nails"
+     id="finger_pinky"
+     d="m 1900.4165,1289.8162 c -5.3259,-16.1674 -10.2274,-32.4763 -13.6938,-49.2635 -4.0749,-21.1128 -7.831,-42.1902 -6.3933,-62.6905 0.8303,-9.9612 -0.8901,-11.6235 7.1466,-24.7457 6.3693,-8.8916 12.7273,-13.3597 22.8971,-14.0025 9.8033,-0.029 26.6289,6.4004 35.964,10.4984 19.0283,14.3094 19.7399,16.5417 28.8015,29.2094 10.9374,18.963 21.1023,37.9259 22.2222,56.8889 4.5475,33.2845 4.4152,46.6797 4.0687,59.1644 -0.8584,27.39 -0.1974,46.2807 -8.7595,60.7743 -14.8263,16.2143 -19.5505,16.2662 -32.9927,15.3689 -7.9733,-1.2736 -16.6715,-3.3898 -24.0623,-11.7948 -9.0052,-11.9361 -10.0153,-12.4154 -14.665,-21.7897 -8.0366,-17.277 -14.7819,-31.7451 -20.5335,-47.6176 z"
+     inkscape:connector-curvature="0"
+     fill="#ff6960"
+     sodipodi:nodetypes="cccccccccccccc" />
+  <path
+     class="finger-nails"
+     id="finger_thumb"
+     d="m 3650.6667,1964 c 10.6155,8.9616 17.1203,3.2936 27.7783,-3.5556 14.2261,-12.7075 15.1196,-14.4847 22.8883,-27.1111 11.9974,-35.1287 20.7979,-64.0983 30.9117,-109.3333 3.4344,-21.724 8.1183,-35.9331 8.577,-56 l 0.067,-23.5556 c -0.559,-8.2618 -1.2361,-15.3426 -2.6667,-14.8888 -8.6212,-1.4702 -11.2984,-0.7408 -24.0041,2.8518 -14.5309,6.3073 -9.9151,3.8303 -22.6625,11.1481 -19.6748,13.4992 -22.3299,16.5563 -33.3334,28.4445 -11.423,13.876 -17.397,24.4826 -22.6666,34.6666 -6.6003,15.4362 -10.3915,30.5212 -12,45.3334 -0.9021,16.1924 -2.0086,32.4139 1.3333,48 2.8962,12.9022 5.2328,25.9164 11.1111,38.2222 3.565,9.1222 7.9951,17.8983 14.6667,25.7778 z"
+     inkscape:connector-curvature="0"
+     fill="#ff6960"
+     sodipodi:nodetypes="cccccccccccccccc" />
+  <path
+     display="none"
+     d="m 2763.4704,581.56826 c -10.8471,9.50226 -14.8871,14.84395 -20.8261,25.63108 -7.4361,22.28398 -4.746,27.62694 -7.0963,46.99207 1.5242,-7.7756 3.2079,-17.62736 16.2453,-30.10366 19.2792,-13.26117 49.8055,-20.88861 70.1448,-19.9338 19.2654,2.69893 23.6959,2.31906 50.2076,17.43609 12.8382,15.30923 16.0699,21.88515 20.0187,29.11308 -1.9791,-21.40669 -3.0316,-36.19262 -12.9801,-54.28893 -4.7577,-8.83269 -8.2563,-9.3623 -17.8687,-15.54817 -14.3316,-7.94203 -24.526,-9.6412 -42.6162,-11.13196 -22.5862,-0.21336 -43.1878,6.77505 -55.229,11.8342 z"
+     id="tip_middle"
+     class="finger-tips"
+     inkscape:connector-curvature="0"
+     fill="#00ff9b"
+     sodipodi:nodetypes="ccccccccccc" />
+  <path
+     display="none"
+     d="m 3237.247,784.80993 c 26.8761,-0.92823 43.1307,7.24773 57.8107,16.77338 10.5957,10.91674 12.0045,15.29667 14.7483,23.28056 2.2465,17.72604 3.0686,27.22819 4.2824,38.93612 -2.3039,-7.34426 -3.1534,-14.38234 -21.6739,-25.14062 -12.7484,-7.33589 -25.689,-11.95194 -57.1289,-13.08937 -25.6541,3.8278 -46.5053,9.25659 -61.5683,16.61476 -11.4695,6.31936 -16.3506,15.27412 -19.045,25.10352 l 5.1678,-41.32745 c 6.3603,-12.90457 12.7206,-19.02729 19.0809,-23.16695 16.8597,-10.29852 36.1704,-16.512 58.326,-17.98395 z"
+     id="tip_index"
+     class="finger-tips"
+     inkscape:connector-curvature="0"
+     fill="#00ff9b"
+     sodipodi:nodetypes="ccccccccccc" />
+  <path
+     display="none"
+     d="m 2337.6059,700.36016 c -8.5453,7.26662 -13.3025,15.02354 -16.5519,25.82098 l -5.7597,40.19289 c 3.1346,-7.58858 5.8168,-15.77853 19.045,-28.4139 16.0526,-10.49555 34.1625,-16.29837 59.9131,-18.85913 22.1843,1.03735 42.223,7.4688 57.1289,16.98893 11.4785,9.84776 17.4561,14.75583 21.6739,25.14062 l -4.0271,-30.08385 c -3.407,-13.50128 -10.5057,-26.77351 -20.8554,-32.77277 -13.3449,-8.73735 -31.0156,-12.66817 -52.304,-12.57944 -26.478,1.95399 -33.2132,2.37692 -58.2628,14.56567 z"
+     id="tip_ring"
+     class="finger-tips"
+     inkscape:connector-curvature="0"
+     fill="#00ff9b"
+     sodipodi:nodetypes="ccccccccccc" />
+  <path
+     display="none"
+     d="m 1886.7227,1240.5527 c -5.0047,-28.7664 -14.8543,-56.1513 -15.7147,-86.2991 -0.1957,-8.5552 -1.795,-16.3264 3.157,-26.6047 5.8909,-6.3539 6.4762,-6.8928 14.9929,-11.0086 10.5816,1.3636 19.6521,3.2093 29.3101,9.0751 14.5516,10.0704 18.8575,16.0426 27.8691,23.897 -9.0145,-4.2229 -27.9867,-11.4067 -35.964,-10.3984 -9.9151,0.4074 -16.3297,6.3316 -22.8971,13.9025 -5.3752,7.916 -7.3841,16.2061 -7.1466,24.7457 z"
+     id="tip_pinky"
+     class="finger-tips"
+     inkscape:connector-curvature="0"
+     fill="#00ff9b"
+     sodipodi:nodetypes="cccccccccc" />
+  <path
+     display="none"
+     d="m 3623.5556,1852 3.6675,-51.3467 c 2.1674,-11.8542 6.1254,-24.3053 13.5766,-37.9208 6.6205,-11.2078 13.0154,-20.386 19.1945,-27.6214 8.1339,-7.0147 16.3862,-13.9821 26.685,-20.1308 8.3674,-5.7851 17.4893,-10.4385 27.6214,-13.5766 5.774,-2.2308 9.0651,-3.5812 16.4943,-4.71 7.1894,-0.6238 8.7193,-0.8298 10.7157,-0.6337 3.8363,0.6252 5.4361,2.2229 6.0293,6.7482 2.7231,17.8718 -3.8582,31.756 -6.651,47.2638 -0.5399,-7.1379 0.651,-15.7594 -2.6667,-20.5164 -6.2358,-0.9092 -12.4717,-0.083 -18.7075,1.1966 -12.6684,4.4469 -23.2205,9.3844 -27.9591,12.8033 -9.3108,7.1811 -16.5246,11.6827 -33.3334,28.4445 -7.5555,8.7075 -15.1111,20.2211 -22.6666,34.6666 -6.2114,15.3876 -9.263,30.3801 -12,45.3334 z"
+     id="tip_thumb"
+     class="finger-tips"
+     inkscape:connector-curvature="0"
+     fill="#00ff9b"
+     sodipodi:nodetypes="cccccccccccccccc" />
+
+   <g
+      id="finger_index_text"
+      font-style="normal"
+      font-weight="normal"
+      font-size="40px"
+      line-height="25px"
+      font-family="sans-serif">
+     <text
+        class="text_tip_style"
+        y="782.56067"
+        x="3347.4009"
+        xml:space="preserve">
+        <tspan
+          y="782.56067"
+          x="3347.4009"
+          id="tspan4510"
+          sodipodi:role="line">tip style:
+        </tspan>
+     </text>
+     <text
+        class="text_service"
+        y="869.39954"
+        x="3347.167"
+        xml:space="preserve">
+        <tspan
+          y="869.39954"
+          x="3347.167"
+          id="tspan4514"
+          sodipodi:role="line">service:
+        </tspan>
+     </text>
+     <text
+        class="text_nail_paint"
+        y="911.58868"
+        x="3348.3433"
+        xml:space="preserve">
+        <tspan
+          y="911.58868"
+          x="3348.3433"
+          id="tspan4518"
+          sodipodi:role="line">nail paint:
+        </tspan>
+     </text>
+     <text
+        class="text_tip_paint"
+        y="825.0567"
+        x="3346.8787"
+        xml:space="preserve"
+        inkscape:label="#text4524">
+        <tspan
+          y="825.0567"
+          x="3346.8787"
+          id="tspan4522"
+          sodipodi:role="line">tip paint:
+        </tspan>
+     </text>
+     <path
+        fill="none"
+        stroke="#000000"
+        stroke-width="4.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m 3537.2881,924.39088 h -191.34 l -70.1801,26.48305"
+        id="path4640"
+        inkscape:connector-curvature="0" />
+     <circle
+        fill="none"
+        stroke="#000000"
+        stroke-width="2.6673491"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        id="path4642"
+        cx="3262.5278"
+        cy="953.94208"
+        r="12.306609" />
+   </g>
+   <g
+      id="finger_middle_text"
+      font-style="normal"
+      font-weight="normal"
+      font-size="40px"
+      line-height="25px"
+      font-family="sans-serif"
+      transform="translate(-400,-180)">
+     <text
+       class="text_tip_style"
+        xml:space="preserve"
+        x="3347.4009"
+        y="782.56067">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4668"
+          x="3347.4009"
+          y="782.56067">tip style:
+        </tspan>
+     </text>
+     <text
+        class="text_service"
+        xml:space="preserve"
+        x="3347.167"
+        y="869.39954">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4672"
+          x="3347.167"
+          y="869.39954">service:
+        </tspan>
+     </text>
+     <text
+        class="text_nail_paint"
+        xml:space="preserve"
+        x="3348.3433"
+        y="911.58868">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4676"
+          x="3348.3433"
+          y="911.58868">nail paint:
+        </tspan>
+     </text>
+     <text
+        class="text_tip_paint"
+        xml:space="preserve"
+        x="3346.8787"
+        y="825.0567">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4680"
+          x="3346.8787"
+          y="825.0567">tip paint:
+        </tspan>
+     </text>
+     <path
+         fill="none"
+         stroke="#000000"
+         stroke-width="4.8"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+        inkscape:connector-curvature="0"
+        id="path4684"
+        d="m 3537.2881,924.39088 h -191.34 l -70.1801,26.48305"/>
+     <circle
+       fill="none"
+       stroke="#000000"
+       stroke-width="2.6673491"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+        r="12.306609"
+        cy="953.94208"
+        cx="3262.5278"
+        id="circle4686"/>
+   </g>
+   <g
+      id="finger_thumb_text"
+      font-style="normal"
+      font-weight="normal"
+      font-size="40px"
+      line-height="25px"
+      font-family="sans-serif"
+      transform="translate(220,760)">
+     <text
+        class="text_tip_style"
+        xml:space="preserve"
+        x="3347.4009"
+        y="782.56067">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4690"
+          x="3347.4009"
+          y="782.56067">tip style:
+        </tspan>
+      </text>
+      <text
+        class="text_service"
+        xml:space="preserve"
+        x="3347.167"
+        y="869.39954">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4694"
+          x="3347.167"
+          y="869.39954">service:
+        </tspan>
+      </text>
+      <text
+        class="text_nail_paint"
+        xml:space="preserve"
+        x="3348.3433"
+        y="911.58868">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4698"
+          x="3348.3433"
+          y="911.58868">nail paint:
+        </tspan>
+      </text>
+      <text
+        class="text_tip_paint"
+        xml:space="preserve"
+        x="3346.8787"
+        y="825.0567">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4702"
+          x="3346.8787"
+          y="825.0567">tip paint:
+        </tspan>
+      </text>
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-width="4.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        inkscape:connector-curvature="0"
+        id="path4706"
+        d="m 3345.9481,924.39088 195.3686,-1.44828 -34.4841,70.96629"
+        sodipodi:nodetypes="ccc" />
+     <circle
+       fill="none"
+       stroke="#000000"
+       stroke-width="2.6673491"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+        r="12.306609"
+        cy="1007.5703"
+        cx="3501.5374"
+        id="circle4708"/>
+   </g>
+   <g
+      id="finger_ring_text"
+      font-style="normal"
+      font-weight="normal"
+      font-size="40px"
+      line-height="25px"
+      font-family="sans-serif"
+      transform="translate(-1200,-230)">
+     <text
+        class="text_tip_style"
+        y="782.56067"
+        x="3347.4009"
+        xml:space="preserve">
+        <tspan
+          y="782.56067"
+          x="3347.4009"
+          id="tspan4712"
+          sodipodi:role="line">tip style:
+        </tspan>
+      </text>
+      <text
+        class="text_service"
+        y="869.39954"
+        x="3347.167"
+        xml:space="preserve">
+        <tspan
+          y="869.39954"
+          x="3347.167"
+          id="tspan4716"
+          sodipodi:role="line">service:
+        </tspan>
+      </text>
+      <text
+        class="text_nail_paint"
+        y="911.58868"
+        x="3348.3433"
+        xml:space="preserve">
+        <tspan
+          y="911.58868"
+          x="3348.3433"
+          id="tspan4720"
+          sodipodi:role="line">nail paint:
+        </tspan>
+      </text>
+      <text
+        class="text_tip_paint"
+        y="825.0567"
+        x="3346.8787"
+        xml:space="preserve">
+        <tspan
+          y="825.0567"
+          x="3346.8787"
+          id="tspan4724"
+          sodipodi:role="line">tip paint:
+        </tspan>
+      </text>
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-width="4.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m 3345.9481,924.39088 190.9001,-0.34078 40.8821,61.46753"
+        id="path4728"
+        inkscape:connector-curvature="0"
+        sodipodi:nodetypes="ccc" />
+     <circle
+       fill="none"
+       stroke="#000000"
+       stroke-width="2.6673491"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+        id="circle4730"
+        cx="3580.4075"
+        cy="998.41705"
+        r="12.306609" />
+   </g>
+   <g
+      id="finger_pinky_text"
+      font-style="normal"
+      font-weight="normal"
+      font-size="40px"
+      line-height="25px"
+      font-family="sans-serif"
+      transform="translate(-1441.8417,177.26674)">
+     <text
+        class="text_tip_style"
+        xml:space="preserve"
+        x="3347.4009"
+        y="782.56067">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4734"
+          x="3347.4009"
+          y="782.56067">tip style:
+        </tspan>
+      </text>
+      <text
+        class="text_service"
+        xml:space="preserve"
+        x="3347.167"
+        y="869.39954">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4738"
+          x="3347.167"
+          y="869.39954">service:
+        </tspan>
+      </text>
+      <text
+        class="text_nail_paint"
+        xml:space="preserve"
+        x="3348.3433"
+        y="911.58868">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4742"
+          x="3348.3433"
+          y="911.58868">nail paint:
+        </tspan>
+      </text>
+      <text
+        class="text_tip_paint"
+        xml:space="preserve"
+        x="3346.8787"
+        y="825.0567">
+        <tspan
+          sodipodi:role="line"
+          id="tspan4746"
+          x="3346.8787"
+          y="825.0567">tip paint:
+        </tspan>
+      </text>
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-width="4.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        inkscape:connector-curvature="0"
+        id="path4750"
+        d="m 3537.2881,924.39088 h -191.34 l -3.7016,60.19047"
+        sodipodi:nodetypes="ccc" />
+     <circle
+       fill="none"
+       stroke="#000000"
+       stroke-width="2.6673491"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+        r="12.306609"
+        cy="999.0127"
+        cx="3342.2422"
+        id="circle4752"/>
+   </g>
+
+  <script id="script18">
+       var nail_pinky = document.getElementById('finger_pinky');
+       var palette = parent.document.getElementById('nail_palette');
+       document.querySelectorAll(&quot;.finger-nails&quot;).forEach(function(obj)
+       {
+         obj.addEventListener(&quot;click&quot;,function(event)
+         {
+           sendNailClickEventToParent(event);
+         });
+       });
+
+       document.querySelectorAll(&quot;.finger-tips&quot;).forEach(function(tip)
+       {
+         tip.addEventListener(&quot;click&quot;,function(event)
+         {
+           sendTipClickEventToParent(event);
+         });
+       });
+
+       //Whenever there's a click on the HTML document update the SVG
+       window.parent.document.addEventListener(&quot;click&quot;,function(event)
+       {
+          //update the selected/all nails and/or tips
+          var name = event.target.name
+          if(name==null)
+          {
+            name = event.target.parentNode.name;
+          }
+          if(name)
+          {
+            var method = name.substring(0, name.indexOf(&quot;(&quot;));
+            var params = name.substring(name.indexOf(&quot;(&quot;)+1, name.length-1);
+            switch(method.toUpperCase())
+            {
+              case &quot;UPDATESELECTED&quot;://update selected
+                var actual_args = params.split(&quot;,&quot;);
+                window.parent.styleSelected(actual_args);
+                //console.log('UPDATESELECTED');
+                break;
+              default:
+                console.log('Unknown method &quot;%s&quot; with parameters &quot;%s&quot;.', method, params);
+                break;
+            }
+          }
+          refresh(event);
+       });
+        //Whenever there's a click on the SVG update the SVG
+       document.querySelector(&quot;svg&quot;).addEventListener(&quot;click&quot;,function(event)
+       {
+          refresh(event);
+       });
+
+       //Fullscreen button event handler
+       window.parent.document.querySelector(&quot;#btn_fullscreen&quot;).addEventListener(&quot;click&quot;,function(event)
+       {
+         var svg = document.querySelector(&quot;svg&quot;);
+         if(svg!=null)
+         {
+           svg.setAttribute(&quot;viewBox&quot;,&quot;1800 500 2000 2500&quot;);
+         }else console.log('error: cannot change viewBox, SVG is undefined.');
+       });
+
+       /*window.parent.document.querySelectorAll(&quot;.list-item-btn&quot;).forEach(function(btn)
+       {
+          //Update the state of the tips(i.e. visible|invisible) when the tips apply button is pressed
+          btn.addEventListener(&quot;click&quot;, function(event)
+          {
+            console.log(&quot;############&quot; + btn.name);
+            if(btn.name)
+            {
+              var method = btn.name.split('(');
+              console.log(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&quot; + btn.name);
+            }else{
+              console.log(&quot;error: method to execute is not defined for this list-item-btn.&quot;);
+            }
+          });
+       });*/
+
+       function removeStrokeOnTips()
+       {
+           //Remove stroke on finger tips
+           document.querySelectorAll(&quot;.finger-tips&quot;).forEach(function(tip)
+           {
+             tip.style.strokeWidth=&quot;0&quot;;
+             tip.style.stroke=&quot;none&quot;;
+           });
+       }
+
+       function removeStrokeOnNails()
+       {
+         //Remove stroke on finger nails
+         document.querySelectorAll(&quot;.finger-nails&quot;).forEach(function(nail)
+         {
+           nail.style.strokeWidth=&quot;0&quot;;
+           nail.style.stroke=&quot;none&quot;;
+         });
+       }
+
+       function updateCursors(clicked_item_classes)
+       {
+          removeStrokeOnNails();
+          removeStrokeOnTips();
+
+          if(clicked_item_classes)
+          {
+            //Did not click on a tip
+            if(!clicked_item_classes.contains('finger-tips'))
+            {
+              //Also did not click on a button
+
+            }
+
+            //Zoom in to a finger-nail if a finger-nail was clicked on
+            if(clicked_item_classes.contains('finger-nails'))
+            {
+              var svg = document.querySelector(&quot;svg&quot;);
+              if(svg!=null)
+              {
+                var x = window.parent.selected_nail.viewBox.x;
+                var y = window.parent.selected_nail.viewBox.y;
+                var w = window.parent.selected_nail.viewBox.w;
+                var h = window.parent.selected_nail.viewBox.h;
+                svg.setAttribute(&quot;viewBox&quot;,x + ' ' + y + ' ' + w + ' ' + h);
+                console.log('info: zoomed into: &quot;%s&quot;.', window.parent.selected_nail.nail_id);
+              }else console.log('error: cannot change viewBox, SVG is undefined.');
+            }else{
+              //Did not click on a nail
+
+            }
+          }
+       }
+
+       function refresh(event)
+       {
+          var clicked_item_classes = event.target.classList;
+
+          updateCursors(clicked_item_classes);
+
+          if(window.parent.selected_nail)
+          {
+            //stroke selected nail
+            var selected_nail = document.querySelector(&quot;#&quot; + window.parent.selected_nail.nail_id);
+            selected_nail.style.strokeWidth=&quot;7&quot;;
+            selected_nail.style.stroke=&quot;#343434&quot;;
+
+            if(window.parent.selected_nail.tip)
+            {
+               //Update the state of the tips(i.e. visible|invisible) when the tips apply button is pressed
+              if(window.parent.selected_nail.tip.tip_style_id!=null)
+              {
+                if(window.parent.selected_nail.tip.tip_style_id!=&quot;none&quot;)
+                {
+                  console.log(&quot;info: showing tip for selected nail.&quot;);
+                  document.getElementById(window.parent.selected_nail.tip.tip_id).style.display=&quot;initial&quot;;
+                  //TODO: apply selected tip style
+                }else{
+                  console.log('info: user opted to not have tip on selected nail. Hiding tip..');
+                  document.getElementById(window.parent.selected_nail.tip.tip_id).style.display=&quot;none&quot;;
+                }
+              }else{
+                console.log('info: user opted to not have tip on selected nail. Hiding tip..');
+                document.getElementById(window.parent.selected_nail.tip.tip_id).style.display=&quot;none&quot;;
+              }
+            }else{
+              console.log('error: selected nail tip is null.');
+            }
+          }else{
+           console.log('error: selected nail is undefined!');
+          }
+
+          //stroke selected tip
+          if(window.parent.selected_tip)
+          {
+            var selected_tip = document.querySelector(&quot;#&quot; + window.parent.selected_tip.tip_id);
+            selected_tip.style.strokeWidth=&quot;4&quot;;
+            selected_tip.style.stroke=&quot;#343434&quot;;
+            console.log(&quot;info: selected tip: '%s'.&quot;, selected_tip);
+          }else console.log('Selected tip is undefined.');
+
+          if(clicked_item_classes.contains('list-item-btn'))
+          {
+            //parse event.target
+            //refresh
+          }
+
+          //render paints and labels
+          window.parent.nails.forEach(function(nail)
+          {
+            //set nail colour
+            document.querySelector(&quot;#&quot; + nail.nail_id).style.fill=nail.colour;
+            //set tip colour
+            document.querySelector(&quot;#&quot; + nail.tip.tip_id).style.fill=nail.tip.colour;
+
+            var nail_text_group = document.querySelector(&quot;#&quot; + nail.nail_id + &quot;_text&quot;);
+            if(nail_text_group)
+            {
+              var style = nail_text_group.querySelector(&quot;.text_tip_style&quot;);
+              var tip_paint = nail_text_group.querySelector(&quot;.text_tip_paint&quot;);
+              var service = nail_text_group.querySelector(&quot;.text_service&quot;);
+              var nail_paint = nail_text_group.querySelector(&quot;.text_nail_paint&quot;);
+
+              style.innerHTML = 'tip style = ' + nail.tip.tip_style_name;
+              tip_paint.innerHTML = 'tip paint = ' + nail.tip.colour;
+              service.innerHTML = 'nail service = ' + (nail.service_name==null?'none':nail.service_name);
+              nail_paint.innerHTML = 'nail paint = ' + nail.colour;
+              //console.log(tip_paint);
+            }else{
+              console.log('error: nail "%s" does not have text group.', nail);
+            }
+          });
+       }
+
+       function sendNailClickEventToParent(event)
+       {
+          var target = event.target;
+          if(target.correspondingUseElement)
+            target = target.correspondingUseElements;
+
+            if(window.parent.nailClick)
+              window.parent.nailClick(target);
+            else console.log('Method `nailClick()` is not defined in parent document object.');
+       }
+
+       function sendTipClickEventToParent(event)
+       {
+          var target = event.target;
+          if(target.correspondingUseElement)
+            target = target.correspondingUseElements;
+
+            if(window.parent.tipClick)
+              window.parent.tipClick(target);
+            else console.log('Method `tipClick()` is not defined in parent document object.');
+       }
+
+     </script>
+</svg>

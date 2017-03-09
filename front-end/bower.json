@@ -1,0 +1,35 @@
+{
+  "name": "patrish-nails",
+  "authors": [
+    "Casper"
+  ],
+  "description": "The website for Patrish Mobile Nails (Paturapy Beauty Spa, formally).",
+  "main": "index.html",
+  "keywords": [
+    "patrish",
+    "beauty",
+    "nails",
+    "spa",
+    "paturapy",
+    "padicure",
+    "manicure"
+  ],
+  "license": "MIT",
+  "homepage": "http://patrishnails.co.za",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "^1.5.9",
+    "angular-mocks": "*",
+    "bootstrap": "boostrap#^3.3.7"
+  },
+  "resolutions": {
+    "angular": "1.6.0"
+  }
+}

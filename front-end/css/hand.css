@@ -1,0 +1,22 @@
+#hand_outline
+{
+  fill:rgba(0, 0, 0, 0.5);
+}
+
+#hand_outline:hover
+{
+  fill:rgba(0, 0, 0, 0.2);
+}
+
+.finger-nails
+{
+  fill: #ff1747;
+}
+
+.finger-nails:hover
+{
+
+  stroke:#fff;
+  stroke-width:5;
+  /*filter: url(#filter_drop_shadow);*/
+}

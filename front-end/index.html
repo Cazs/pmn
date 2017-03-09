@@ -1,0 +1,307 @@
+ <!DOCTYPE html>
+<html lang=en ng-app="pmn">
+  <head>
+    <meta http-equiv="Content-Type" type="text/html" charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-COMPATIBLE">
+    <meta content="width=device-width,initial-scale=1,user-scalable=no,max-scale=1" name="viewport">
+    <title>Patrish Nails | Home</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" style="border-bottom:1px solid rgba(233, 65, 132, 1.0);height:80px;background-color:#fff;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed btn btn-default" data-toggle="collapse" data-target="#navbar" role="navigation" aria-expanded="false" style="margin-top: 20px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span id="first_bar" style="background-color:black;" class="icon-bar"></span>
+            <span id="second_bar" style="background-color:black;" class="icon-bar"></span>
+            <span id="third_bar" style="background-color:black;" class="icon-bar"></span>
+          </button>
+          <a href="#!/" class="navbar-brand" style="margin-right: 30px;"><img src="./images/logo_noslogan.png" style="width:200px;height:75px;margin-top:-13px;" alt="Logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li id="home" class="active"><a href="#!/">Home</a></li>
+            <li id="promos"><a href="#!/promotions">Promotions</a></li>
+            <li id="pricing"><a href="#!/pricing">Pricing</a></li>
+            <li id="bookings"><a href="#!/bookings">Bookings</a></li>
+            <li id="contact"><a href="#!/contact">Contact us</a></li>
+            <li id="about"><a href="#!/about">About us</a></li>
+          </ul>
+          <div style="height:50px;float:right;display:inline;margin-top:15px;width:230px;">
+            <button class="btn btn-default" style="float:left;margin-top:5px;" onclick="showLogin()">Log in</button>
+            <button class="btn btn-default" style="float:left;margin-top:5px;margin-left:5px;" onclick="showSignup()">Sign up</button>
+            <div class="dropdown">
+              <img id="dropdownMenu1" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"src="./images/ic_account_circle_black_48px.svg" style="float:left;margin-left:10px;" width="48" height="48">
+                <span class="caret" style="margin-top:20px;"></span>
+              </img>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Order history</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" style="color:red;">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="dialog_signup" class="popup-dialog" title="Sign up">
+            <h2 style="text-align: center;">Sign up</h2>
+            <form class="form" style="margin-top:5px;margin-left:auto;margin-right:auto;" ng-submit="register()" ng-controller="RegisterController">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form_control_container">
+
+                      <div class="input-group ig">
+              						<span class="input-group-addon form-text ft-50" id="span_username">Username</span>
+              						<input ng-model="username" type="text" placeholder="Enter your username." aria-describedby="username" name="username" class="form-control fc-100" id="username"/>
+              				</div>
+                      <div class="input-group ig">
+              						<span class="form-text input-group-addon ft-30" id="span_email">eMail address</span>
+              						<input ng-model="email" type="text" placeholder="Enter your email address" aria-describedby="email address" name="email" class="form-control fc-100" id="email"/>
+              				</div>
+
+                      <div class="input-group ig">
+              						<span class="form-text input-group-addon ft-30" id="span_password">Password</span>
+                          <div class="fc-100">
+      						                <input ng-model="password" type="password" style="width:100%;z-index:0;" placeholder="Enter your password." aria-describedby="password" name="password" class="form-control" id="password"/>
+                                  <button type="button" onclick="showHidePassword('password')" style="position:absolute;margin-left:-10.1%;margin-top:3px;width:10%;height:60%;background:none;border:none;">
+                                    <span id="password_icon" class="glyphicon glyphicon-eye-open"></span>
+                                  </button>
+                          </div>
+              				</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="width:150px;margin:auto;margin-top:30px;">
+                  <button type="submit" class="btn btn-success" style="width:150px;height:50px;margin:auto;">Next</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div id="dialog_login" class="popup-dialog" title="Log in">
+            <h2 style="text-align: center;">Log in</h2>
+            <form class="form" style="margin-top:5px;margin-left:auto;margin-right:auto;" ng-submit="login()" ng-controller="LoginController">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form_control_container">
+
+                      <div class="input-group ig">
+              						<span class="form-text input-group-addon ft-30" id="span_username">Username</span>
+              						<input ng-model="username" type="text" placeholder="Enter your username." aria-describedby="username" name="username" class="form-control fc-100" id="username"/>
+              				</div>
+
+                      <div class="input-group ig">
+              						<span class="form-text input-group-addon ft-30" id="span_password">Password</span>
+                          <div class="fc-100">
+      						                <input ng-model="password" type="password" style="width:100%;z-index:0;" placeholder="Enter your password." aria-describedby="password" name="passwd" class="form-control" id="passwd"/>
+                                  <button type="button" onclick="showHidePassword('passwd')" style="position:absolute;margin-left:-10.1%;margin-top:3px;width:10%;height:60%;background:none;border:none;">
+                                    <span id="passwd_icon" class="glyphicon glyphicon-eye-open"></span>
+                                  </button>
+                          </div>
+              				</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="width:150px;margin:auto;margin-top:30px;">
+                  <button type="submit" class="btn btn-success" style="width:150px;height:50px;margin:auto;">Next</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+    <div ng-view style="margin-top:100px;">
+
+    </div>
+
+    <footer style="height:100px;background-color:#E61669;border-top:1px solid #fff;position:relative;">
+      <!--<div style="width:100%;position:absolute;top:-60px;">
+        <img class="img-circle center-block" style="border:2px solid #E61669;display:block;width:120px;height:120px;" src="./images/logo_icon_multishade.png">
+      </div>-->
+      <div style="width:100%;margin-top:30px;text-align:center; color: #000;">
+        <p>Contact us on 072 804 4244 &middot <a href="#" style="color:#fff;">Like</a> Patrish Nails&copy on Facebook &middot Patrish Nails&copy is a registered service provider. </p>
+      </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function showLogin()
+        {
+          if($( "#dialog_login" ).parent().css('display')=='none')
+          {
+            $("#dialog_login" ).parent().css({'display':'initial'});
+            if($(window).width()>=500)
+            {
+              $("#dialog_login" ).parent().css({'top':'30%'});
+              $("#dialog_login" ).parent().css({'left':'30%'});
+            }else{
+              $("#dialog_login" ).parent().css({'top':'5%'});
+              $("#dialog_login" ).parent().css({'left':'5%'});
+            }
+            $("#dialog_login" ).parent().css({'position':'fixed'});
+          }else {
+            $( "#dialog_login" ).parent().css({'display':'none'});
+          }
+        }
+
+        function showSignup()
+        {
+          if($( "#dialog_signup" ).parent().css('display')=='none')
+          {
+            $("#dialog_signup" ).parent().css({'display':'initial'});
+            if($(window).width()>=500)
+            {
+              $("#dialog_signup" ).parent().css({'top':'30%'});
+              $("#dialog_signup" ).parent().css({'left':'30%'});
+            }else{
+              $("#dialog_signup" ).parent().css({'top':'5%'});
+              $("#dialog_signup" ).parent().css({'left':'5%'});
+            }
+            $("#dialog_signup" ).parent().css({'position':'fixed'});
+          }else {
+            $( "#dialog_signup" ).parent().css({'display':'none'});
+          }
+        }
+
+        function showHidePassword(element)
+        {
+            //$('#password').password('toggle');
+            if($('#' + element).attr('type') == 'password')
+            {
+              $('#' + element).attr('type','text');
+              $('#' + element + '_icon').removeClass('glyphicon glyphicon-eye-open');
+              $('#' + element + '_icon').addClass('glyphicon glyphicon-eye-close');
+            }
+            else
+            {
+              $('#' + element).attr('type','password');
+              $('#' + element + '_icon').removeClass('glyphicon glyphicon-eye-close');
+              $('#' + element + '_icon').addClass('glyphicon glyphicon-eye-open');
+            }
+        }
+
+        //$('#dialog_signup').parent().find('button').innerHTML = 'X';
+        //document.querySelectorAll('.ui-dialog-titlebar button').innerText = 'x';
+        /*$('#dialog_signup').parent().find('button').click(function()
+        {
+          $( "#dialog_signup" ).parent().css({'display':'none'});
+        });*/
+
+
+        //$('#dialog_login').parent().find('button').label = 'X';
+        /*$('#dialog_login').parent().find('button').click(function()
+        {
+          $( "#dialog_login" ).parent().css({'display':'none'});
+        });*/
+
+
+        document.querySelector('.navbar-toggle').addEventListener('click', function(event)
+        {
+          if(document.querySelector('#third_bar').style.display != "none")
+          {
+            $({deg: -20}).animate({deg: 139},
+            {
+              duration: 500,
+              step: function(now)
+              {
+                if(now<=45)
+                  $('#first_bar').css({transform:'rotate('+now+'deg)'});
+                $('#second_bar').css({transform:'rotate('+now+'deg)'});
+              }
+            });
+
+            document.querySelector('#first_bar').style.marginTop="6px";
+            document.querySelector('#second_bar').style.marginBottom="6px";
+            document.querySelector('#second_bar').style.marginTop="-2px";
+            document.querySelector('#third_bar').style.display = "none";
+          }else
+          {
+            $({deg: 139}).animate({deg: 0},
+            {
+              duration: 500,
+              step: function(now)
+              {
+                if(now<=45)
+                $('#first_bar').css({transform:'rotate('+now+'deg)'});
+                $('#second_bar').css({transform:'rotate('+now+'deg)'});
+              },
+              complete: function()
+              {
+                document.querySelector('#third_bar').style.display = "block";
+              }
+            });
+            document.querySelector('#first_bar').style.marginTop="0px";
+            document.querySelector('#second_bar').style.marginBottom="0px";
+            document.querySelector('#second_bar').style.marginTop="3px";
+          }
+        });
+
+        $(function()
+        {
+          if($(window).width()<500)
+          {
+            //set up sign up
+            $( "#dialog_signup" ).dialog({width:$(window).width()});
+            //set up sign in
+            $( "#dialog_login" ).dialog({width:$(window).width()});
+            $( "#dialog_signup, #dialog_login" ).parent().css({'margin-left':'-20px'});
+          }else{
+            //set up sign up
+            $( "#dialog_signup" ).dialog({width:500});
+            //set up sign in
+            $( "#dialog_login" ).dialog({width:500});
+          }
+
+          //set up sign up
+          /*$( "#dialog_signup" ).dialog({width:500});
+          //$('#dialog_signup').parent().find('button').innerHTML = 'X';
+          //document.querySelectorAll('.ui-dialog-titlebar button').innerText = 'x';
+          $('#dialog_signup').parent().find('button').click(function()
+          {
+            $( "#dialog_signup" ).parent().css({'display':'none'});
+          });
+
+          //set up sign in
+          $( "#dialog_login" ).dialog({width:500});
+          //$('#dialog_login').parent().find('button').label = 'X';
+          $('#dialog_login').parent().find('button').click(function()
+          {
+            $( "#dialog_login" ).parent().css({'display':'none'});
+          });*/
+          //apply box shadow on both
+          $( "#dialog_signup, #dialog_login" ).parent().css({'display':'none'});
+          $( "#dialog_signup, #dialog_login" ).parent().css({'-webkit-box-shadow':'0px 0px 40px #343434'});
+          $( "#dialog_signup, #dialog_login" ).parent().css({'-moz-box-shadow':'0px 0px 40px #343434'});
+          $( "#dialog_signup, #dialog_login" ).parent().css({'-o-box-shadow':'0px 0px 40px #343434'});
+          $( "#dialog_signup, #dialog_login" ).parent().css({'box-shadow':'0px 0px 40px #343434'});
+      });
+    </script>
+
+    <script src="controllers/home.js"></script>
+    <script src="controllers/bookings.js"></script>
+    <script src="controllers/products.js"></script>
+    <script src="controllers/users.js"></script>
+    <script src="controllers/paints.js"></script>
+    <script src="controllers/services.js"></script>
+    <script src="controllers/tips.js"></script>
+    <script src="controllers/register.js"></script>
+    <script src="controllers/login.js"></script>
+  </body>
+</html>

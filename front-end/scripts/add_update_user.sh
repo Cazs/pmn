@@ -1,0 +1,1 @@
+curl -X POST -d usr=ghost -d pwd="abc123" -d access_level=3 -d firstname=Casper -d lastname=Ndlovu -d email=casperndlovu42@gmail.com -d tel=0114750770 -d cell=0810460933 -d active=true --header "Cookie: " http://localhost:9000/api/user/add

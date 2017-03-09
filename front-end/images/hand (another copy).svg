@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../css/hand.css"?><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg4570"
+   width="100%"
+   height="100%"
+   viewBox="1800 500 2000 2500">
+  <defs
+     id="defs9">
+    <filter
+       id="filter_drop_shadow"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%">
+      <feOffset
+         result="offOut"
+         in="SourceAlpha"
+         dx="0"
+         dy="0"
+         id="feOffset2" />
+      <feGaussianBlur
+         result="blurOut"
+         in="offOut"
+         stdDeviation="9"
+         id="feGaussianBlur4" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut"
+         mode="normal"
+         id="feBlend6" />
+    </filter>
+  </defs>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:13.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     stroke-miterlimit="4"
+     id="hand_outline"
+     d="m 2513.8518,2877.8125 -88.9629,-225.3681 -78.2222,-177.7777 -21.3334,-71.1111 -177.7777,-519.1112 -55.1481,-118.2161 -28.9128,-89.8811 -121.896,-305.0245 -50.3148,-230.4689 30.2998,-14.8084 40.9286,-7.9507 60.4292,25.1887 31.9999,34.9302 175.3683,373.29 105.2154,207.1283 78.3703,103.7645 -52.1131,-332.0781 -22.2791,-172.9154 -3.2199,-146.971 -27.204,-382.4982 3.679,-89.61745 81.172,-57.03936 83.5976,51.34581 15.2943,100.20031 64.947,336.76339 19.8081,142.1176 33.7778,155.1286 60.0348,350.8666 17.0939,-245.7817 0.5205,-151.0417 7.8846,-139.098 2.7981,-165.4666 3.5556,-152.88902 -2.4402,-130.82231 5.4198,-165.93321 19.6448,-56.21568 88.6209,-42.93244 84.4181,40.03477 18.1426,86.01056 17.3262,175.84345 22.0697,359.03718 2.7667,196.7015 0.7181,216.889 26.3841,174.6726 48.4869,-171.1534 33.108,-117.75 25.7255,-185.3943 31.5687,-211.2461 25.3527,-293.61532 44.7846,-28.02178 52.074,-27.46847 56.198,31.732 14.7998,15.67041 9.0477,394.96936 -13.3811,187.4246 -18.9455,232.1741 -4.1133,272.1085 59.7297,300.7098 36.8805,-43.1194 51.2351,-160.2481 42.0242,-203.7017 94.2222,-108.4445 56.8889,-31.9999 56.8889,-6.6667 34.2222,9.3333 15.1111,-2.4444 -49.3333,227.3333 28.4444,136 -31.9476,93.281 -47.6558,96.1787 -33.9957,137.0675 -10.8453,182.8061 -83.6386,212.5446 -44.8541,134.1438"/>
+  <path
+     fill="#ff6960"
+     class="finger-nails"
+     id="finger_middle"
+     d="m 2813.3616,556.77344 57.1289,8.78906 21.6739,25.14062 3.5234,51.99024 -1.7715,76.19531 -21.1015,58.90821 -55.0489,26.21289 -57.6875,-26.22071 -22.0058,-64.25976 -6.2051,-73.56836 0.8808,-45.76953 19.045,-25.10352 z" />
+  <path
+     fill="#ff6960"
+     class="finger-nails"
+     d="m 3235.2856,769.87031 57.1289,8.78906 21.6739,25.14062 3.5234,51.99024 -1.7715,76.19531 -21.1015,58.90821 -55.0489,26.21285 -57.6875,-26.22067 -22.0058,-64.25976 -6.2051,-73.56836 0.8808,-45.76953 19.045,-25.10352 z"
+     id="finger_index" />
+  <path
+     fill="#ff6960"
+     class="finger-nails"
+     id="finger_ring"
+     d="m 2394.2524,667.30087 57.1289,8.78906 21.6739,25.14062 3.5234,51.99024 -1.7715,76.19531 -21.1015,58.90821 -55.0489,26.21289 -57.6875,-26.22071 -19.1968,-62.38713 -9.0141,-75.44099 0.8808,-45.76953 19.045,-25.10352 z"/>
+  <path
+     fill="#ff6960"
+     class="finger-nails"
+     id="finger_pinky"
+     d="m 1900.4165,1229.8162 -13.6938,-49.2635 -6.3933,-62.6905 7.1466,-24.7457 22.8971,-10.0027 28.0053,3.6896 36.7602,32.0184 22.2222,56.8889 4.0687,59.1644 -12.5599,60.7743 -22.1699,16.7734 -28.2843,-13.1993 -16.6656,-21.7897 z" />
+  <path
+     fill="#ff6960"
+     class="finger-nails"
+     id="finger_thumb"
+     d="m 3650.6667,1904 25.7778,-3.5556 24.8888,-27.1111 27.1112,-109.3333 9.7777,-56 2.6667,-23.5556 -2.6667,-14.8888 -18.7075,1.1966 -27.9591,12.8033 -33.3334,28.4445 -22.6666,34.6666 -12,45.3334 1.3333,48 11.1111,38.2222 z" />
+  <path
+     fill="#00ff9b"
+     display="none"
+     d="m 2763.4704,521.56826 -16.8537,14.04475 -13.8684,58.5784 19.045,-25.10352 61.5683,-12.31445 57.1289,8.78906 21.6739,25.14062 -12.9801,-54.28893 -15.5279,-15.78225 -50.5611,-7.49054 z"
+     id="tip_middle"
+     class="finger-tips"/>
+  <path
+     fill="#00ff9b"
+     display="none"
+     d="m 3237.247,724.80993 57.8107,16.77338 12.8479,23.28056 6.1828,38.93612 -21.6739,-25.14062 -57.1289,-8.78906 -61.5683,12.31445 -19.045,25.10352 5.1678,-41.32745 19.0809,-23.16695 z"
+     id="tip_index"
+     class="finger-tips"/>
+  <path
+     fill="#00ff9b"
+     display="none"
+     d="m 2331.6472,643.00847 -13.9036,21.84852 -4.1045,39.86185 19.045,-25.10352 61.5683,-12.31445 57.1289,8.78906 21.6739,25.14062 -1.0478,-43.65641 -23.8347,-19.20021 -52.304,-12.57944 z"
+     id="tip_ring"
+     class="finger-tips"/>
+  <path
+     fill="#00ff9b"
+     display="initial"
+     d="m 1886.7227,1180.5527 -15.0142,-86.2991 2.8561,-26.6047 14.5933,-11.0086 25.4509,9.5433 23.7696,20.6198 -28.0053,-3.6896 -22.8971,10.0027 -7.1466,24.7457 z"
+     id="tip_pinky"
+     class="finger-tips"/>
+  <path
+     fill="#00ff9b"
+     display="none"
+     d="m 3623.5556,1792 3.6675,-51.3467 13.5766,-37.9208 19.1945,-27.6214 26.685,-20.1308 27.6214,-13.5766 17.3219,-4.2134 8.895,-0.4682 7.0224,6.0861 -6.651,41.6362 -2.6667,-14.8888 -18.7075,1.1966 -27.9591,12.8033 -33.3334,28.4445 -22.6666,34.6666 z"
+     id="tip_thumb"
+     class="finger-tips"/>
+
+     <script id="script18">
+       var nail_pinky = document.getElementById('finger_pinky');
+       var palette = parent.document.getElementById('nail_palette');
+       document.querySelectorAll(&quot;.finger-nails&quot;).forEach(function(obj)
+       {
+         obj.addEventListener(&quot;click&quot;,function(event)
+         {
+           sendNailClickEventToParent(event);
+         });
+       });
+
+       document.querySelectorAll(&quot;.finger-tips&quot;).forEach(function(tip)
+       {
+         tip.addEventListener(&quot;click&quot;,function(event)
+         {
+           sendTipClickEventToParent(event);
+         });
+       });
+
+       //Whenever there's a click on the HTML document update the SVG
+       window.parent.document.addEventListener(&quot;click&quot;,function(event)
+       {
+          //update the selected/all nails and/or tips
+          var name = event.target.name
+          if(name==null)
+          {
+            name = event.target.parentNode.name;
+          }
+          if(name)
+          {
+            var method = name.substring(0, name.indexOf("("));
+            var params = name.substring(name.indexOf("(")+1, name.length-1);
+            switch(method.toUpperCase())
+            {
+              case "UPDATESELECTED"://update selected
+                var actual_args = params.split(",");
+                window.parent.styleSelected(actual_args);
+                //console.log('UPDATESELECTED');
+                break;
+              default:
+                console.log('Unknown method "%s" with parameters "%s".', method, params);
+                break;
+            }
+          }
+          refresh(event);
+       });
+        //Whenever there's a click on the SVG update the SVG
+       document.querySelector(&quot;svg&quot;).addEventListener(&quot;click&quot;,function(event)
+       {
+          refresh(event);
+       });
+
+       //Fullscreen button event handler
+       window.parent.document.querySelector(&quot;#btn_fullscreen&quot;).addEventListener(&quot;click&quot;,function(event)
+       {
+         var svg = document.querySelector(&quot;svg&quot;);
+         if(svg!=null)
+         {
+           svg.setAttribute("viewBox","1800 500 2000 2500");
+         }else console.log('error: cannot change viewBox, SVG is undefined.');
+       });
+
+       /*window.parent.document.querySelectorAll(&quot;.list-item-btn&quot;).forEach(function(btn)
+       {
+          //Update the state of the tips(i.e. visible|invisible) when the tips apply button is pressed
+          btn.addEventListener(&quot;click&quot;, function(event)
+          {
+            console.log("############" + btn.name);
+            if(btn.name)
+            {
+              var method = btn.name.split('(');
+              console.log(">>>>>>>>>>>>" + btn.name);
+            }else{
+              console.log("error: method to execute is not defined for this list-item-btn.");
+            }
+          });
+       });*/
+
+       function removeStrokeOnTips()
+       {
+           //Remove stroke on finger tips
+           document.querySelectorAll(&quot;.finger-tips&quot;).forEach(function(tip)
+           {
+             tip.style.strokeWidth="0";
+             tip.style.stroke="none";
+           });
+       }
+
+       function removeStrokeOnNails()
+       {
+         //Remove stroke on finger nails
+         document.querySelectorAll(&quot;.finger-nails&quot;).forEach(function(nail)
+         {
+           nail.style.strokeWidth="0";
+           nail.style.stroke="none";
+         });
+       }
+
+       function updateCursors(clicked_item_classes)
+       {
+          removeStrokeOnNails();
+          removeStrokeOnTips();
+
+          if(clicked_item_classes)
+          {
+            //Did not click on a tip
+            if(!clicked_item_classes.contains('finger-tips'))
+            {
+              //Also did not click on a button
+
+            }
+
+            //Zoom in to a finger-nail if a finger-nail was clicked on
+            if(clicked_item_classes.contains('finger-nails'))
+            {
+              var svg = document.querySelector(&quot;svg&quot;);
+              if(svg!=null)
+              {
+                var x = window.parent.selected_nail.viewBox.x;
+                var y = window.parent.selected_nail.viewBox.y;
+                var w = window.parent.selected_nail.viewBox.w;
+                var h = window.parent.selected_nail.viewBox.h;
+                svg.setAttribute("viewBox",x + ' ' + y + ' ' + w + ' ' + h);
+                console.log('info: zoomed into: "%s".', window.parent.selected_nail.nail_id);
+              }else console.log('error: cannot change viewBox, SVG is undefined.');
+            }else{
+              //Did not click on a nail
+
+            }
+          }
+       }
+
+       function refresh(event)
+       {
+          var clicked_item_classes = event.target.classList;
+
+          updateCursors(clicked_item_classes);
+
+          if(window.parent.selected_nail)
+          {
+            //stroke selected nail
+            var selected_nail = document.querySelector(&quot;#&quot; + window.parent.selected_nail.nail_id);
+            selected_nail.style.strokeWidth="7";
+            selected_nail.style.stroke="#343434";
+
+            if(window.parent.selected_nail.tip)
+            {
+               //Update the state of the tips(i.e. visible|invisible) when the tips apply button is pressed
+              if(window.parent.selected_nail.tip.tip_style_id!=null)
+              {
+                if(window.parent.selected_nail.tip.tip_style_id!="none")
+                {
+                  console.log("info: showing tip for selected nail.");
+                  document.getElementById(window.parent.selected_nail.tip.tip_id).style.display="initial";
+                  //TODO: apply selected tip style
+                }else{
+                  console.log('info: user opted to not have tip on selected nail. Hiding tip..');
+                  document.getElementById(window.parent.selected_nail.tip.tip_id).style.display="none";
+                }
+              }else{
+                console.log('info: user opted to not have tip on selected nail. Hiding tip..');
+                document.getElementById(window.parent.selected_nail.tip.tip_id).style.display="none";
+              }
+            }else{
+              console.log('error: selected nail tip is null.');
+            }
+          }else{
+           console.log('error: selected nail is undefined!');
+          }
+
+          //stroke selected tip
+          if(window.parent.selected_tip)
+          {
+            var selected_tip = document.querySelector(&quot;#&quot; + window.parent.selected_tip.tip_id);
+            selected_tip.style.strokeWidth="7";
+            selected_tip.style.stroke="#343434";
+            console.log("info: selected tip: '%s'.", selected_tip);
+          }else console.log('Selected tip is undefined.');
+
+          if(clicked_item_classes.contains('list-item-btn'))
+          {
+            //parse event.target
+            //refresh
+          }
+       }
+
+       function sendNailClickEventToParent(event)
+       {
+          var target = event.target;
+          if(target.correspondingUseElement)
+            target = target.correspondingUseElements;
+
+            if(window.parent.nailClick)
+              window.parent.nailClick(target);
+            else console.log('Method `nailClick()` is not defined in parent document object.');
+       }
+
+       function sendTipClickEventToParent(event)
+       {
+          var target = event.target;
+          if(target.correspondingUseElement)
+            target = target.correspondingUseElements;
+
+            if(window.parent.tipClick)
+              window.parent.tipClick(target);
+            else console.log('Method `tipClick()` is not defined in parent document object.');
+       }
+
+     </script>
+</svg>

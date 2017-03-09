@@ -1,0 +1,484 @@
+<div id="hand_editor_container">
+  <div style="width:30px;height:30px;background-color: red;">
+    <button type="button" class="btn btn-default" id="btn_fullscreen">
+      <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>
+    </button>
+  </div>
+  <object id="nail_editor" type="image/svg+xml" data="../images/hand.svg" onload="init()">
+    Browser not supported
+  </object>
+</div>
+<div id="nail_palette">
+  <div class="input-group list-group" style="width:95%;margin:auto;">
+    <div style="width:100%;height:50px;padding-bottom:10px;margin:auto;">
+      <div style="float:left;">
+        <button type="button" onclick="" class="btn btn-default disabled" id="">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </button>=Apply to selected finger.
+      </div>
+
+      <div style="float:left;">
+        <button type="button" onclick="" class="btn btn-default disabled" id="">
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          <span style="margin-left:-10px;" class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </button>=Apply to all fingers.
+      </div>
+    </div>
+
+    <h3 style="color:#fff;text-align:center;">Finger Nail Tips</h3>
+    <div id="lst_tips" class="list-group">
+      <div ng-controller="TipsController" class="input-group controller">
+        <div class="list-group-item">
+          <div class="input-group-btn">
+            <label for="tips_none" class="form-control" style="width:60%;">None</label>
+            <div style="float:left;max-height:25px;">
+              <button type="button" name="updateSelected(null, none, null, null, none)" class="btn btn-default list-item-btn" id="tips_none">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div style="float:left;max-height:15px;">
+              <button type="button" onclick="" class="btn btn-default list-item-btn" id="">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+                <span style="margin-left:-10px;" class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+
+          </div>
+          <p class="list-group-item-text">
+            <span class="glyphicon glyphicon-tags"></span>&nbsp R0</p>
+        </div>
+
+        <div class="list-group-item" ng-repeat="tip in tips">
+          <div class="input-group-btn">
+            <label for="{{tip._id}}" class="form-control" style="width:60%;">{{tip.tip_name}}</label>
+            <div style="float:left;max-height:25px;">
+              <button type="button" name="updateSelected(null, {{tip._id}}, null, null, {{tip.tip_name}})" class="btn btn-default list-item-btn" id="{{tip._id}}">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div style="float:left;max-height:15px;">
+              <button type="button" class="btn btn-default list-item-btn" id="{{tip._id}}">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+                <span style="margin-left:-10px;" class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="list-group-item-text" style="display:inline-block;">
+            <div style="float:left;margin-right:20px;margin-top:5px;margin-left:5px;"><span class="glyphicon glyphicon-tags"></span>&nbsp R{{tip.price}}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <h3 style="color:#fff;text-align:center;">Service</h3>
+    <div id="lst_services" class="list-group">
+      <div ng-controller="ServicesController" class="input-group controller">
+        <div class="list-group-item" ng-repeat="service in services">
+          <div class="input-group-btn">
+            <label for="{{service._id}}" class="form-control" style="width:60%;">{{service.service_name}}</label>
+            <div style="float:left;max-height:25px;">
+              <button type="button" name="updateSelected({{service._id}}, null, null, {{service.service_name}}, null)" class="btn btn-default list-item-btn" id="{{service._id}}">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div style="float:left;max-height:15px;">
+              <button type="button" class="btn btn-default list-item-btn" id="{{service._id}}">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+                <span style="margin-left:-10px;" class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="list-group-item-text" style="display:inline-block;">
+            <div style="float:left;margin-right:20px;margin-top:5px;margin-left:5px;"><span class="glyphicon glyphicon-tags"></span>&nbsp R{{service.price}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="color:#fff;text-align:center;">Paints</h3>
+    <div id="lst_paints" class="list-group">
+      <div ng-controller="PaintsController" class="input-group controller">
+        <div class="list-group-item" ng-repeat="paint in paints">
+          <div class="input-group-btn">
+            <label for="{{paint._id}}" class="form-control" style="width:60%;">{{paint.paint_name}}</label>
+            <div style="float:left;max-height:25px;">
+              <button type="button" name="updateSelected(null, null, {{paint.colour_value}}, null, null)" class="btn btn-default list-item-btn" id="{{paint._id}}">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <div style="float:left;max-height:15px;">
+              <button type="button" onclick="" class="btn btn-default list-item-btn" id="{{paint._id}}">
+                <span class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+                <span style="margin-left:-10px;" class="glyphicon glyphicon-ok list-item-btn" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="list-group-item-text" style="display:inline-block;">
+            <div style="float:left;margin-right:20px;margin-top:5px;margin-left:5px;"><span class="glyphicon glyphicon-tags"></span>&nbsp R{{paint.price}}</div>
+            <div style="width:30px;height:30px;float:left;border-radius:5px;background-color:{{paint.colour_value}};"></div>
+            <p style="float:left;margin-top:5px;">{{paint.colour_value}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- User details -->
+  <div id="user_details" class="row">
+    <div class="col-lg-12">
+      <form class="form" ng-submit="book()">
+        <div class="form-group">
+        	<div class="input-group" style="padding-top:20px;">
+        		<span class="input-group-addon" id="name" style="max-width:160px;min-width:150px;">Name and Surname</span>
+        		<input type="text" placeholder="Name and Surname" aria-describedby="name" name="name" class="form-control" id="names" style="width:100%;"/>
+        	</div>
+        	<div class="input-group" style="padding-top:20px;">
+        		<span class="input-group-addon" id="email" style="max-width:160px;min-width:150px;">Email Address</span>
+        		<input type="text" placeholder="Email Address" aria-describedby="email" name="email" class="form-control" id="email" style="width:100%;"/>
+        	</div>
+        	<div class="input-group" style="padding-top:20px;">
+        		<span id="contact" class="input-group-addon" style="max-width:160px;min-width:150px;">Contact number</span>
+        		<input type="text" placeholder="Phone number to contact you on." aria-describedby="contact" class="form-control" name="contact" id="contact" style="width:100%;"/>
+        	</div>
+          <div class="input-group" style="padding-top:20px;">
+        		<span id="span_date" class="input-group-addon" style="max-width:160px;min-width:150px;">Date</span>
+        		<input type="date" placeholder="Date of appointment." aria-describedby="date" class="form-control" name="app_date" id="app_date" style="width:100%;"/>
+        	</div>
+          <div class="input-group" style="padding-top:20px;">
+        		<span id="span_time" class="input-group-addon" style="max-width:160px;min-width:150px;">Time</span>
+        		<input type="time" min='09:00' max='21:00' placeholder="Time of appointment." aria-describedby="time" class="form-control" name="app_time" id="app_time" style="width:100%;"/>
+        	</div>
+          <div class="input-group" style="padding-top:20px;">
+        		<span id="span_address" class="input-group-addon" style="max-width:160px;min-width:150px;">Enter an address/click on the map below</span>
+        		<input type="text" style="margin:auto;" placeholder="Address where services will be rendered." aria-describedby="address" class="form-control" name="address" id="address" style="width:100%;"/>
+            <input type="hidden" name="gps_loc" id="gps_loc" value=""/>
+        	</div>
+          <div style="border-radius:20px;" id="map"></div>
+        </div>
+        <button name="submit" class="form-control btn-default" style="width:150px;height:50px;display:block;margin:auto;margin-top:20px;background-color:#7DAFFF;" id="submit">Check out&nbsp <span class="glyphicon glyphicon-ok"></span></button>
+      </form><!-- End actual forms -->
+    </div>
+  </div>
+</div>
+
+<script>
+  //var paints = angular.element(document.getElementById("list_paints")).scope().getPaints();
+  //console.log(paints);
+
+  var selected_nail = null;
+  var selected_tip = null;
+  var address = null;
+
+  var tips = [
+                new Tip('tip_pinky', "none", "none", "#fff"),
+                new Tip('tip_ring', "none", "none", "#fff"),
+                new Tip('tip_middle', "none", "none", "#fff"),
+                new Tip('tip_index', "none", "none", "#fff"),
+                new Tip('tip_thumb', "none", "none", "#fff")
+              ];
+  var nails = [
+                new Nail('finger_pinky', null, null, "#fff", tips[0], new ViewBox(1600, 600, 1000, 1000)),
+                new Nail('finger_ring', null, null,"#fff", tips[1], new ViewBox(2000, 200, 1000, 1000)),
+                new Nail('finger_middle', null, null,"#fff", tips[2], new ViewBox(2400, 180, 1000, 1000)),
+                new Nail('finger_index', null, null,"#fff", tips[3], new ViewBox(2800, 400, 1000, 1000)),
+                new Nail('finger_thumb', null, null,"#fff", tips[4], new ViewBox(3000, 1400, 1000, 1200))
+              ];
+
+  function styleSelected(args)
+  {
+    if(args.length>=5)
+    {
+      var service_id=checkNull(args[0].trim());
+      var tip_style_id=checkNull(args[1].trim());
+      var paint=checkNull(args[2].trim());
+      var service_name = checkNull(args[3].trim());
+      var tip_style_name = checkNull(args[4].trim());
+      console.log('service_id: "%s", tip_style_id: "%s", paint: "%s".', service_id, tip_style_id, paint);
+      styleSelectedNail(service_id, service_name, tip_style_id, paint);
+      styleSelectedTip(tip_style_id, tip_style_name, paint);
+    }else{
+      console.log('Not enough actual arguments. Found "%s" args.', args.length);
+    }
+  }
+
+  function checkNull(obj)
+  {
+    if(obj==null)
+      return null;
+    if(obj.toString().toLowerCase()=="null")
+      return null;
+    return obj;
+  }
+
+  function styleSelectedNail(service_id, service_name, tip_style_id, paint)
+  {
+    if(selected_nail)
+    {
+      if(service_id!=null)
+      {
+        selected_nail.service_id = service_id;
+        console.log('info: updated selected nail service id.');
+      }else {
+        console.log('error: invalid service id "%s".', service_id);
+      }
+      if(service_name!=null)
+      {
+        selected_nail.service_name = service_name;
+        console.log('info: updated selected nail service name.');
+      }else {
+        console.log('error: invalid service name "%s".', service_name);
+      }
+      if(paint!=null)
+      {
+        selected_nail.colour = paint;
+        console.log('info: updated selected nail paint.');
+      }else {
+        console.log('error: invalid paint "%s".', paint);
+      }
+      if(tip_style_id!=null)
+      {
+        selected_nail.tip.tip_style_id = tip_style_id;
+        console.log("info: updated selected nail's tip.");
+      }else {
+        console.log('error: invalid tip style id "%s".', paint);
+      }
+    }else {
+      console.log('warning: no nail selected.');
+    }
+  }
+
+  function styleSelectedTip(tip_style_id, tip_style_name, paint)
+  {
+    if(selected_tip)
+    {
+      if(tip_style_id!=null)
+      {
+        selected_tip.tip_style_id = tip_style_id;
+        console.log('info: updated selected tip id.');
+      }else {
+        console.log('error: invalid tip style id "%s".', tip_style_id);
+      }
+      if(tip_style_name!=null)
+      {
+        selected_tip.tip_style_name = tip_style_name;
+        console.log('info: updated selected tip name.');
+      }else {
+        console.log('error: invalid tip style name "%s".', tip_style_id);
+      }
+      if(paint!=null)
+      {
+        selected_tip.colour = paint;
+        console.log('info: updated selected tip paint.');
+      }else {
+        console.log('error: invalid paint "%s".', paint);
+      }
+    }else {
+      console.log('warning: no tip selected.');
+    }
+  }
+
+  function nailClick(source_nail)
+  {
+    nails.forEach(function(nail)
+    {
+      if(nail.nail_id == source_nail.id)
+      {
+        console.log('Updating selected nail (and tip to null).');
+        selected_nail = nail;
+        selected_tip = selected_nail.tip;
+        //TODO: Load selected nail data to form
+        return;
+      }
+    });
+  }
+
+  function tipClick(source_tip)
+  {
+    //for(var i=0;i<nails.length;i++)
+    tips.forEach(function(tip)
+    {
+      if(tip.tip_id == source_tip.id)
+      {
+        console.log('Updating selected tip.');
+        selected_tip = tip;
+        selected_nail = null;
+        //TODO: Load selected tip data to form
+        return;
+      }
+    });
+  }
+
+  function ViewBox(x, y, w, h)
+  {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+  }
+
+  function Tip(tip_id, tip_style_id, tip_style_name, colour)
+  {
+    this.tip_id = tip_id;
+    this.tip_style_name = tip_style_name;
+    this.colour = colour;
+  }
+
+  function Nail(nail_id, service_id, service_name, colour, tip, viewBox)
+  {
+    this.nail_id = nail_id;
+    //this.tip_index = tip_index;
+    this.service_id = service_id;
+    this.service_name = service_name;
+    this.colour = colour;
+    this.viewBox = viewBox;
+    this.tip = tip;
+    //this.tip_svg_object_id = tip_svg_object_id;
+  }
+
+  function init()
+  {
+    //Set active nav item to "Bookings"
+    $('#navbar li').removeClass('active');
+    $('#bookings').addClass('active');
+  }
+
+  function initMap()
+  {
+    var joburg = {lat: -26.129697, lng: 27.931579};
+    var map = new google.maps.Map(document.getElementById('map'),
+    {
+      zoom: 10,
+      center: joburg,
+      mapTypeId: 'roadmap'
+    });
+
+    var marker = new google.maps.Marker(
+    {
+      position: joburg,
+      map: map
+    });
+
+    google.maps.event.addListener(map, 'click',function(event)
+    {
+      address = event.latLng;
+      map.panTo(event.latLng);
+      marker.setPosition(event.latLng);
+      map.setCenter(event.latLng);
+      document.getElementById('gps_loc').value=address;
+      //event.stopPropagation();
+      console.log('Moved marker to "[%s,%s]"', event.latLng.lat(), event.latLng.lng());
+    });
+
+    // Create the search box and link it to the UI element.
+    var input = document.getElementById('address');
+    var searchBox = new google.maps.places.SearchBox(input);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+    // Bias the SearchBox results towards current map's viewport.
+    map.addListener('bounds_changed', function()
+    {
+      searchBox.setBounds(map.getBounds());
+    });
+
+    //var markers = [];
+    // Listen for the event fired when the user selects a prediction and retrieve
+    // more details for that place.
+    searchBox.addListener('places_changed', function()
+    {
+      var places = searchBox.getPlaces();
+
+      if (places.length == 0)
+      {
+        return;
+      }
+
+      // Clear out the old markers.
+      /*markers.forEach(function(marker)
+      {
+        marker.setMap(null);
+      });
+      markers = [];*/
+
+      // For each place, get the icon, name and location.
+      var bounds = new google.maps.LatLngBounds();
+      places.forEach(function(place)
+      {
+        if (!place.geometry)
+        {
+          console.log("Returned place contains no geometry");
+          return;
+        }
+        var icon =
+        {
+          url: place.icon,
+          size: new google.maps.Size(71, 71),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(17, 34),
+          scaledSize: new google.maps.Size(25, 25)
+        };
+
+        // Create a marker for each place.
+        /*markers.push(new google.maps.Marker(
+        {
+          map: map,
+          icon: icon,
+          title: place.name,
+          position: place.geometry.location
+        }));*/
+
+        if (place.geometry.viewport)
+        {
+          // Only geocodes have viewport.
+          bounds.union(place.geometry.viewport);
+        } else
+        {
+          bounds.extend(place.geometry.location);
+        }
+      });
+      map.fitBounds(bounds);
+    });
+
+    var infoWindow = new google.maps.InfoWindow({map: map});
+
+     // Try HTML5 geolocation.
+     if (navigator.geolocation)
+     {
+       navigator.geolocation.getCurrentPosition(function(position)
+       {
+         var pos =
+         {
+           lat: position.coords.latitude,
+           lng: position.coords.longitude
+         };
+
+         infoWindow.setPosition(pos);
+         infoWindow.setContent('Your device\'s location was found.');
+         map.panTo(pos);
+         marker.setPosition(pos);
+         map.setCenter(pos);
+       }, function() {
+         handleLocationError(true, infoWindow, map.getCenter());
+       });
+     }else
+     {
+       // Browser doesn't support Geolocation
+       handleLocationError(false, infoWindow, map.getCenter());
+     }
+  }
+
+  function handleLocationError(browserHasGeolocation, infoWindow, pos)
+  {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: Could not locate your device.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0gnKaVItPYCDbT48aJCs1610N10wpV-Q&libraries=places&callback=initMap">
+</script>
