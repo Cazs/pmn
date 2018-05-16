@@ -27,7 +27,7 @@ mongoose.connect('mongodb://gh0st:#Reventone42@ds225010.mlab.com:25010/pmn');
 //globals
 var db = mongoose.connection;
 const SESSION_TTL = 60 * 30;//30 minutes
-const PORT = 8000;
+const PORT = 8080;
 const APP_NAME = "PMN server v1.0";
 
 /**How to execute Python script from Node**
