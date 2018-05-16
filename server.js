@@ -453,5 +453,5 @@ app.post('/api/auth',function(req, res)
   });
 });
 
-app.listen(PORT);
+app.listen(process.env.PORT || PORT);
 console.log('..::%s Server running at localhost on port %s::..',APP_NAME, PORT);
