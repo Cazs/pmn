@@ -2,7 +2,7 @@
   "name": "patrish-nails",
   "version": "1.0.0",
   "description": "Patrish Nails Web Application",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "pmn"
   },
