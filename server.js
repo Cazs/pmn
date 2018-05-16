@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 //app.use(bodyParser.json());
 
 //Connect to mongoose
-mongoose.connect('mongodb://gh0st:#Reventone42@ds253959.mlab.com:53959/pioneerdesigns');
+mongoose.connect('mongodb://gh0st:#Reventone42@ds225010.mlab.com:25010/pmn');
 //globals
 var db = mongoose.connection;
 const SESSION_TTL = 60 * 30;//30 minutes
